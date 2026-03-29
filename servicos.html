@@ -1,44 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css/estilo.css">
-<script src="js/script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/script.js"></script>
 
-<title>Serviços</title>
-</head>
+    <title>Serviços</title>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1>Agendamento</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </header>
+<hr />
+    <form>
+      <label>Serviço:</label>
+      <select>
+        <option>Banho</option>
+        <option>Tosa</option></select
+      ><br /><br />
 
-<header>
-<h1>Agendamento</h1>
-</header>
+      <label>Tipo:</label>
+      <input type="radio" name="tipo" /> Tele-busca
+      <input type="radio" name="tipo" /> Entrega no local<br /><br />
 
-<form>
+      <label>Data:</label>
+      <input type="date" /><br /><br />
 
-<label>Serviço:</label>
-<select>
-<option>Banho</option>
-<option>Tosa</option>
-</select><br><br>
+      <label>Hora:</label>
+      <input type="time" /><br /><br />
 
-<label>Tipo:</label>
-<input type="radio" name="tipo"> Tele-busca
-<input type="radio" name="tipo"> Entrega no local<br><br>
+      <button type="button" onclick="agendar()">Agendar</button>
+    </form>
 
-<label>Data:</label>
-<input type="date"><br><br>
-
-<label>Hora:</label>
-<input type="time"><br><br>
-
-<button type="button" onclick="agendar()">Agendar</button>
-
-</form>
-
-<footer>
-<p>© 2026</p>
-</footer>
-
-</body>
+    <footer>
+      <li><p>Autor: William Guterres</p></li>
+    <li><p>Email: <a href="mailto:contato@amicaopetshop.com">contato@amicaopetshop.com</a></li></p></li>
+    <li><p>Telefone: (51)3330-3030</p></li>
+    </footer>
+  </body>
 </html>
