@@ -1,52 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css/estilo.css">
-<script src="js/script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/script.js"></script>
 
-<title>Cadastro</title>
-</head>
+    <title>Cadastro</title>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1>Cadastro</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </header>
 
-<header>
-<h1>Cadastro</h1>
-</header>
+    <form onsubmit="return validarFormulario();">
+      <h2>Dados do Cliente</h2>
 
-<form onsubmit="return validarFormulario()">
+      <input type="text" placeholder="Nome" required /><br /><br />
 
-<h2>Dados do Cliente</h2>
+      <input type="text" placeholder="CPF" required /><br /><br />
 
-<input type="text" placeholder="Nome" required><br><br>
+      <input type="text" placeholder="Endereço" /><br /><br />
 
-<input type="text" placeholder="CPF" required><br><br>
+      <input type="tel" placeholder="Telefone" /><br /><br />
 
-<input type="text" placeholder="Endereço"><br><br>
+      <input type="email" placeholder="E-mail" required /><br /><br />
 
-<input type="tel" placeholder="Telefone"><br><br>
+      <p>Sexo:</p>
+      <input type="radio" name="sexo" /> Masculino
+      <input type="radio" name="sexo" /> Feminino<br /><br />
 
-<input type="email" placeholder="E-mail" required><br><br>
+      <h2>Dados do Pet</h2>
 
-<p>Sexo:</p>
-<input type="radio" name="sexo"> Masculino
-<input type="radio" name="sexo"> Feminino<br><br>
+      <input type="text" placeholder="Nome do Pet" required /><br /><br />
 
-<h2>Dados do Pet</h2>
+      <input type="text" placeholder="Raça" /><br /><br />
 
-<input type="text" placeholder="Nome do Pet" required><br><br>
+      <input type="number" placeholder="Idade" /><br /><br />
 
-<input type="text" placeholder="Raça"><br><br>
+      <input type="submit" value="Cadastrar" />
+    </form>
 
-<input type="number" placeholder="Idade"><br><br>
-
-<input type="submit" value="Cadastrar">
-
-</form>
-
-<footer>
-<p>© 2026</p>
-</footer>
-
-</body>
+    <footer>
+      <p>© 2026</p>
+    </footer>
+  </body>
 </html>

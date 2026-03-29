@@ -1,44 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css/estilo.css">
-<script src="js/script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/script.js"></script>
 
-<title>Serviços</title>
-</head>
+    <title>Serviços</title>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1>Agendamento</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </header>
 
-<header>
-<h1>Agendamento</h1>
-</header>
+    <form>
+      <label>Serviço:</label>
+      <select>
+        <option>Banho</option>
+        <option>Tosa</option></select
+      ><br /><br />
 
-<form>
+      <label>Tipo:</label>
+      <input type="radio" name="tipo" /> Tele-busca
+      <input type="radio" name="tipo" /> Entrega no local<br /><br />
 
-<label>Serviço:</label>
-<select>
-<option>Banho</option>
-<option>Tosa</option>
-</select><br><br>
+      <label>Data:</label>
+      <input type="date" /><br /><br />
 
-<label>Tipo:</label>
-<input type="radio" name="tipo"> Tele-busca
-<input type="radio" name="tipo"> Entrega no local<br><br>
+      <label>Hora:</label>
+      <input type="time" /><br /><br />
 
-<label>Data:</label>
-<input type="date"><br><br>
+      <button type="button" onclick="agendar()">Agendar</button>
+    </form>
 
-<label>Hora:</label>
-<input type="time"><br><br>
-
-<button type="button" onclick="agendar()">Agendar</button>
-
-</form>
-
-<footer>
-<p>© 2026</p>
-</footer>
-
-</body>
+    <footer>
+      <p>© 2026</p>
+    </footer>
+  </body>
 </html>
